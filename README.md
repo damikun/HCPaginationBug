@@ -51,7 +51,20 @@ Info: Running on .Net5 Standard
   "before": "Mg==",
   "after": null
 }
+
 ```
+# SQLite database table
+
+under:
+appDB.db
+
+| # | ID |  Name |
+|:-:|:--:|:-----:|
+| 1 | 1  | user1 |
+| 2 | 2  | user2 |
+| 3 | 3  | user3 |
+| 4 | 4  | user4 |
+
 # Packages:
 ```
  <ItemGroup>
