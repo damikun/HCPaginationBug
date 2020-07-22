@@ -5,7 +5,7 @@ Related to bug: https://github.com/ChilliCream/hotchocolate/issues/2154
 
 Test data included! (in Program.cs)
 
-# To Run:
+# To Run
 
 1 Fetch to local Git
 2 Run: dotnet restore
@@ -14,6 +14,7 @@ Test data included! (in Program.cs)
 Info: Running on .Net5 Standard
 
 # Playground Query
+```
   query Users(
         $first: PaginationAmount
         $last: PaginationAmount
@@ -41,7 +42,7 @@ Info: Running on .Net5 Standard
           }
         }
       }
-
+```
 ## Query Variables
 ```
 {
