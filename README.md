@@ -5,13 +5,13 @@ Related to bug: https://github.com/ChilliCream/hotchocolate/issues/2154
 
 Test data included! (in Program.cs)
 
-#To Run:
+# To Run:
 Fetch to local Git
 Run: dotnet restore
 Run: dotnet wacth run
 Running on .Net5 Standard
 
-#Playground Query
+# Playground Query
   query Users(
         $first: PaginationAmount
         $last: PaginationAmount
@@ -40,7 +40,7 @@ Running on .Net5 Standard
         }
       }
 
-##Query Variables
+## Query Variables
 ```
 {
   "first": null,
@@ -49,7 +49,7 @@ Running on .Net5 Standard
   "after": null
 }
 ```
-#Packages:
+# Packages:
 ```
  <ItemGroup>
     <PackageReference Include="HotChocolate" Version="10.5.0-rc.1" />
