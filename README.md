@@ -6,10 +6,12 @@ Related to bug: https://github.com/ChilliCream/hotchocolate/issues/2154
 Test data included! (in Program.cs)
 
 # To Run:
-Fetch to local Git
-Run: dotnet restore
-Run: dotnet wacth run
-Running on .Net5 Standard
+
+1 Fetch to local Git
+2 Run: dotnet restore
+3 Run: dotnet wacth run
+
+Info: Running on .Net5 Standard
 
 # Playground Query
   query Users(
