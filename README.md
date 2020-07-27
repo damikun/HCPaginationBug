@@ -5,6 +5,43 @@ Related to bug: https://github.com/ChilliCream/hotchocolate/issues/2154
 
 Test data included! (in Program.cs)
 
+## Bug location
+
+After quick check it looks like problem in this part but im not sure... i did not debug it yet...
+
+under: https://github.com/ChilliCream/hotchocolate/blob/a7b1f39c686d2d572f0ef61ff9d8c0ceea90b795/src/HotChocolate/Core/src/Types/Types/Relay/QueryableConnectionResolver.cs 
+
+```
+      int count = temp.Count();
+      int skip = count - last;
+```
+            
+```
+ protected virtual IQueryable<T> GetLastEdges(
+            IQueryable<T> edges, int last,
+            ref int offset)
+        {
+            if (last < 0)
+            {
+                throw new ArgumentOutOfRangeException(nameof(last));
+            }
+
+            IQueryable<T> temp = edges;
+
+            int count = temp.Count();
+            int skip = count - last;
+
+            if (skip > 1)
+            {
+                temp = temp.Skip(skip);
+                offset += count;
+                offset -= temp.Count();
+            }
+
+            return temp;
+        }
+```
+
 # To Run
 ```
 1 Fetch to local Git
