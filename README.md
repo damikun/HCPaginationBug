@@ -7,7 +7,7 @@ Test data included! (in Program.cs)
 
 ## Bug location
 
-After quick check it looks like problem in this part but im not sure... i did not debug it yet...
+After quick check it looks like problem in this part but im not sure... i did not debug it yet... It looks like going from + over 0 to - is not handled...
 
 under: https://github.com/ChilliCream/hotchocolate/blob/a7b1f39c686d2d572f0ef61ff9d8c0ceea90b795/src/HotChocolate/Core/src/Types/Types/Relay/QueryableConnectionResolver.cs 
 
