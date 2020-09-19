@@ -6,7 +6,7 @@ Related to bug: https://github.com/ChilliCream/hotchocolate/issues/2154
 Test data included! (in Program.cs)
 
 
-[Readme](src)
+[Readme](Domain)
 
 ## Bug location
 
